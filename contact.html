@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - The United Network Nations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.svg" alt="United Network Nations Logo" class="logo">
+            <div class="header-title">
+                <h1>The United Network Nations</h1>
+                <p>Supranational Organization for Network States and Societies</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preamble.html">Preamble</a></li>
+                <li><a href="members.html">Member States</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2>Contact the Secretariat</h2>
+            <p>For membership inquiries, partnerships, or general questions, please submit the form below.</p>
+
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="150d02af-f5a9-4e2b-8532-45fac643219e">
+                <input type="hidden" name="subject" value="New Submission from UNN Website">
+                <input type="hidden" name="from_name" value="UNN Contact Form">
+                <input type="hidden" name="redirect" value="https://timeantitimeantitime.github.io/UNN/contact?success=true">
+                <input type="checkbox" name="botcheck" style="display: none;">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="organization">Organization / Network State</label>
+                    <input type="text" id="organization" name="organization">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div id="success-message" style="display: none;">
+                <p>Thank you for your message. We will respond shortly.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The United Network Nations. All rights reserved.</p>
+    </footer>
+
+    <script>
+        if (window.location.search.includes('success=true')) {
+            document.querySelector('.contact-form').style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
