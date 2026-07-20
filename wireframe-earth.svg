@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background -->
+  <rect width="400" height="400" fill="white"/>
+  
+  <!-- Globe wireframe -->
+  <g fill="none" stroke="#2E75B6" stroke-width="1.5" opacity="0.8">
+    <!-- Horizontal latitude lines -->
+    <ellipse cx="200" cy="200" rx="150" ry="40"/>
+    <ellipse cx="200" cy="200" rx="150" ry="80"/>
+    <ellipse cx="200" cy="200" rx="150" ry="120"/>
+    <ellipse cx="200" cy="200" rx="150" ry="160"/>
+    
+    <!-- Vertical longitude lines -->
+    <ellipse cx="200" cy="200" rx="40" ry="150"/>
+    <ellipse cx="200" cy="200" rx="80" ry="150"/>
+    <ellipse cx="200" cy="200" rx="120" ry="150"/>
+    <ellipse cx="200" cy="200" rx="150" ry="150"/>
+  </g>
+  
+  <!-- Network nodes (blockchain points) -->
+  <g fill="#5B9BD5">
+    <!-- Outer ring nodes -->
+    <circle cx="200" cy="50" r="6"/>
+    <circle cx="350" cy="200" r="6"/>
+    <circle cx="200" cy="350" r="6"/>
+    <circle cx="50" cy="200" r="6"/>
+    
+    <!-- Diagonal nodes -->
+    <circle cx="306" cy="94" r="5"/>
+    <circle cx="306" cy="306" r="5"/>
+    <circle cx="94" cy="306" r="5"/>
+    <circle cx="94" cy="94" r="5"/>
+    
+    <!-- Inner nodes -->
+    <circle cx="250" cy="150" r="4"/>
+    <circle cx="250" cy="250" r="4"/>
+    <circle cx="150" cy="250" r="4"/>
+    <circle cx="150" cy="150" r="4"/>
+    
+    <!-- Additional nodes -->
+    <circle cx="320" cy="150" r="4"/>
+    <circle cx="320" cy="250" r="4"/>
+    <circle cx="80" cy="150" r="4"/>
+    <circle cx="80" cy="250" r="4"/>
+    <circle cx="200" cy="100" r="4"/>
+    <circle cx="200" cy="300" r="4"/>
+  </g>
+  
+  <!-- Network connections (blockchain links) -->
+  <g stroke="#5B9BD5" stroke-width="1.5" opacity="0.6">
+    <!-- Outer connections -->
+    <line x1="200" y1="50" x2="306" y2="94"/>
+    <line x1="306" y1="94" x2="350" y2="200"/>
+    <line x1="350" y1="200" x2="306" y2="306"/>
+    <line x1="306" y1="306" x2="200" y2="350"/>
+    <line x1="200" y1="350" x2="94" y2="306"/>
+    <line x1="94" y1="306" x2="50" y2="200"/>
+    <line x1="50" y1="200" x2="94" y2="94"/>
+    <line x1="94" y1="94" x2="200" y2="50"/>
+    
+    <!-- Cross connections -->
+    <line x1="200" y1="50" x2="150" y2="150"/>
+    <line x1="200" y1="50" x2="250" y2="150"/>
+    <line x1="350" y1="200" x2="250" y2="150"/>
+    <line x1="350" y1="200" x2="250" y2="250"/>
+    <line x1="200" y1="350" x2="250" y2="250"/>
+    <line x1="200" y1="350" x2="150" y2="250"/>
+    <line x1="50" y1="200" x2="150" y2="250"/>
+    <line x1="50" y1="200" x2="150" y2="150"/>
+    
+    <!-- Inner ring connections -->
+    <line x1="150" y1="150" x2="250" y2="150"/>
+    <line x1="250" y1="150" x2="250" y2="250"/>
+    <line x1="250" y1="250" x2="150" y2="250"/>
+    <line x1="150" y1="250" x2="150" y2="150"/>
+    
+    <!-- Additional connections -->
+    <line x1="200" y1="100" x2="150" y2="150"/>
+    <line x1="200" y1="100" x2="250" y2="150"/>
+    <line x1="320" y1="150" x2="250" y2="150"/>
+    <line x1="320" y1="150" x2="350" y2="200"/>
+    <line x1="320" y1="250" x2="250" y2="250"/>
+    <line x1="320" y1="250" x2="350" y2="200"/>
+    <line x1="200" y1="300" x2="150" y2="250"/>
+    <line x1="200" y1="300" x2="250" y2="250"/>
+    <line x1="80" y1="150" x2="150" y2="150"/>
+    <line x1="80" y1="150" x2="50" y2="200"/>
+    <line x1="80" y1="250" x2="150" y2="250"/>
+    <line x1="80" y1="250" x2="50" y2="200"/>
+  </g>
+  
+  <!-- Globe outline -->
+  <circle cx="200" cy="200" r="150" fill="none" stroke="#2E75B6" stroke-width="2"/>
+</svg>
